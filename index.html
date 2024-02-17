@@ -11,14 +11,141 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-
-
-
-
+    <header>
+      <!-- Navigation Bar section -->
+      <div class="flex justify-between mt-12 mx-12 items-center">
+        <h2 class="text-6xl font-extrabold">P-Ticket</h2>
+        <nav>
+          <ul class="flex justify-between gap-10">
+            <li>Home</li>
+            <li>About</li>
+            <li>Destination</li>
+            <li>Search</li>
+          </ul>
+        </nav>
+        <button class="btn bg-[#1DD1001A] text-[#1DD100] text-2xl">
+          Bus
+          <img src="images/bus-icon.png" alt="" />
+        </button>
+      </div>
+      <!-- Bus Image Section -->
+      <section class="mt-12 mx-12">
+        <div class="card w-full image-full">
+          <!-- <figure><img src="images/banner.png" alt="Shoes" /></figure> -->
+          <img class="w-full" src="images/banner.png" alt="Bus" />
+          <div class="card-body items-center justify-center">
+            <h2 class="card-title text-white text-6xl font-bold">
+              End-to-End Travel with
+            </h2>
+            <h2 class="text-6xl text-[#1DD100]">P Paribahan</h2>
+            <p>
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <div class="card-actions justify-center">
+              <button class="btn bg-[#1DD100] border-none items-center">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Best offer section -->
+      <h2
+        class="text-black font-bold text-6xl items-center justify-center mt-14 mx-96 text-center"
+      >
+        Best offers for you
+      </h2>
+      <section class="flex justify-around gap-12 mt-12 mx-12">
+        <!-- First Part -->
+        <div class="flex gap-14 bg-[#FFBF0F] rounded-xl">
+          <div class="p-10 space-y-5">
+            <h2 class="text-black font-extrabold text-5xl">15% OFF</h2>
+            <p class="text-black font-bold">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+          <div class="p-10 space-y-5">
+            <h2 class="text-black font-extrabold text-5xl">NEW15</h2>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+        <!-- Second Part -->
+        <div class="flex gap-14 bg-[#F78C9C] rounded-xl">
+          <div class="p-10 space-y-5">
+            <h2 class="text-black font-extrabold text-5xl">20% OFF</h2>
+            <p class="text-black font-bold">on your next purchase</p>
+            <p>use by January 2024</p>
+          </div>
+          <div class="p-10 space-y-5">
+            <h2 class="text-black font-extrabold text-5xl">Couple 20</h2>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </section>
+      <button
+        class="btn border-[#1DD100] text-[#1DD100] p-10 mt-16 flex justify-center items-center m-auto"
+      >
+        See All Offers
+      </button>
+    </header>
+    <main class="bg-[#F7F8F8] rounded-t-2xl">
+      <!-- Main section Part One -->
+      <section class="bg-[#FFFFFF]">
+        <!-- Part One Top part -->
+        <div class="flex flex-col justify-center items-center mt-16 space-y-7">
+          <h3 class="text-black text-4xl font-extrabold">P.H Paribahan</h3>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app.
+          </p>
+          <p>The integrated testing features allow for a streamlined .</p>
+        </div>
+        <div class="flex gap-28 justify-between mt-16 mx-12">
+          <!-- Part Two left section -->
+          <div class="">
+            <div class="flex gap-28">
+              <div class="flex gap-6">
+                <img src="images/bus-logo.png" alt="" />
+                <div class="space-y-7">
+                  <h3 class="text-black text-4xl font-extrabold">GreenLine Paribahan</h3>
+                  <p>Coach-009-WEB| AC-Business</p>
+                </div>
+                
+              </div>
+              <div>
+                <button class="btn bg-[#1DD10026]">
+                    <img src="images/seat-green.png" alt=""> <span class="text-[#1DD100]">40 Seats Left</span>
+                </button>
+            </div>
+            </div>
+            <div class="flex flex-col space-y-8 mt-7 bg-slate-300 rounded-2xl">
+                <div class="flex justify-between bg-slate-500 rounded-xl p-4">
+                    <p>Route</p>
+                    <p class="font-bold">Dhaka-Sylhet</p>
+                </div>
+                <div class="flex justify-between bg-slate-500 rounded-xl p-4">
+                    <p>Departure time</p>
+                    <p class="font-bold">9.00 pm</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="bg-slate-500 rounded-xl p-4">Boarding Point - Laxmipur</p>
+                    <p class="bg-slate-500 rounded-xl p-4">Dropping Point - Bogura</p>
+                    <p class="font-bold bg-slate-500 rounded-xl p-4">Est. Time - 11 Hour</p>
+                </div>
+            </div>
+          </div>
+          <!-- Part Two Right  section -->
+          <div class="space-y-10">
+            <img src="images/fare.png" alt="">
+            <h2 class="text-7xl font-extrabold text-black">550 Taka</h2>
+            <p class="text-5xl font-bold text-black" >Per Seat</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
