@@ -4,17 +4,30 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
     seatA2.addEventListener('click',function(){
     seatA2.style.backgroundColor = '#1DD100';
  })
- const seatDisplay = document.getElementById('seat-count').innerText;
- const seatCount = parseInt(seatDisplay);
-
- if(seatA2== true){
-    seatCount++
  }
 
+ const seatDisplay = document.getElementById('seat-count');
+ const seatIndex = document.getElementById('seat40')
+ let setValue = 0;
+ let totalSeat = 40
+ for (let i of seatArray){
+    const seatCount = document.getElementById(i);
+    seatCount.addEventListener('click',function(){
+        setValue++
+        seatDisplay.innerText = setValue
+        totalSeat--
+        seatIndex.innerText = totalSeat
+    })
  }
-
-
-
+//  const seatIndex = document.getElementById('seat40');
+//  let totalSeat = 40;
+//  for (let i of seatArray){
+//     const seatCount = document.getElementById(i);
+//     seatCount.addEventListener('click',function(){
+//         totalSeat--
+//         seatDisplay.innerText = totalSeat
+//     })
+//  }
 
 
 
