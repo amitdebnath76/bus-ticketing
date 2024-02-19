@@ -65,10 +65,9 @@ for (let i of seatArray) {
 
     const seatNumber = document.getElementById("seat-count").innerText;
     const seatInteger = parseInt(seatNumber) * 550;
-    function alart() {
-      if (parseInt(seatNumber) > 4) {
-        alert("You can not buy more then 4 tickets at a time");
-      }
+    
+    if (parseInt(seatNumber) > 4) {
+      alert("You can not buy more then 4 tickets at a time");
     }
     console.log(typeof seatNumber);
 
