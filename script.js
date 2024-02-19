@@ -77,6 +77,29 @@ for (let i of seatArray) {
 
     const grandTotal = document.getElementById("grandTotal");
     grandTotal.innerText = seatInteger;
+
+    const applyButton = document.getElementById('couponApply')
+    applyButton.addEventListener('click', function(){
+      let new15 = 'NEW15';
+      let couple20 = 'Couple 20'
+      const couponCode = document.getElementById('couponCode').value;
+      const lastTotal = document.getElementById("grandTotal");
+      const discountTotal = parseInt(lastTotal.innerText)
+      console.log("last total is", typeof lastTotal)
+      console.log("discount total", typeof discountTotal)
+      if(String(couponCode) ===new15){
+        let newTotal = discountTotal - (discountTotal *.15) 
+        lastTotal.innerText =parseInt(newTotal) 
+      }
+      else if(String(couponCode) ===couple20){
+        let newTotal20 = discountTotal - (discountTotal *.20) 
+        lastTotal.innerText = parseInt(newTotal20)
+      }
+      else{
+        return 'Enter a valid coupon'
+      }
+    })
+    
   });
 }
 
