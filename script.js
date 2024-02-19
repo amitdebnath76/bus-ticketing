@@ -26,9 +26,24 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
         console.log(seatInteger)
         let totalPrice= document.getElementById('totalPrice');
         totalPrice.innerText =  seatInteger
-      //   totalPrice = seatInteger * ticketPrice
-    })
- }
+
+        const grandTotal = document.getElementById('grandTotal');
+            grandTotal.innerText = seatInteger 
+      // -----------------------------
+   //    const applybutton =document.getElementById('couponApply');
+   //    applybutton.addEventListener('click',function(){
+   //       const coupon = document.getElementById('couponCode')
+   //       if(coupon.value === 'NEW15'){
+   //          const grandTotal = document.getElementById('grandTotal');
+   //          grandTotal.value = totalPrice - (totalPrice *.15)
+   //    }
+   //   else{
+   //    grandTotal.value = totalPrice
+   //   }
+      }
+    )}
+
+   
 //  const seatIndex = document.getElementById('seat40');
 //  let totalSeat = 40;
 //  for (let i of seatArray){
