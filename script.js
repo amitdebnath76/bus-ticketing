@@ -18,11 +18,18 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
     seatCount.addEventListener('click',function(){
         setValue++
         seatDisplay.innerText = setValue
+      
         totalSeat--
         seatIndex.innerText = totalSeat
 
         const seatNumber = document.getElementById('seat-count').innerText
         const seatInteger = parseInt(seatNumber) *550;
+        if(parseInt(seatNumber) > 4){
+         alert("You can not buy more then 4 tickets at a time")
+         
+        }
+        console.log(typeof seatNumber)
+        
         console.log(seatInteger)
         let totalPrice= document.getElementById('totalPrice');
         totalPrice.innerText =  seatInteger
@@ -34,6 +41,9 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
     )}
 
 
+   
+
+// Hidden or Show section part
     const nestbutton = document.getElementById('next-button');
     nestbutton.addEventListener('click',function(){
       const header = document.getElementById('header');
