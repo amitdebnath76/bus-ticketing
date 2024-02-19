@@ -29,19 +29,38 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
 
         const grandTotal = document.getElementById('grandTotal');
             grandTotal.innerText = seatInteger 
-      // -----------------------------
-   //    const applybutton =document.getElementById('couponApply');
-   //    applybutton.addEventListener('click',function(){
-   //       const coupon = document.getElementById('couponCode')
-   //       if(coupon.value === 'NEW15'){
-   //          const grandTotal = document.getElementById('grandTotal');
-   //          grandTotal.value = totalPrice - (totalPrice *.15)
-   //    }
-   //   else{
-   //    grandTotal.value = totalPrice
-   //   }
+      
       }
     )}
+
+
+    const nestbutton = document.getElementById('next-button');
+    nestbutton.addEventListener('click',function(){
+      const header = document.getElementById('header');
+      header.classList.add('hidden')
+      const main = document.getElementById('main');
+      main.classList.add('hidden')
+      const footer = document.getElementById('footer');
+      footer.classList.add('hidden')
+      const successButton = document.getElementById('success');
+      successButton.classList.remove('hidden')
+
+    })
+
+   //  //////////
+   // const continueButton = document.getElementById('continue');
+   //  nestbutton.addEventListener('click',function(){
+   //    const header = document.getElementById('header');
+   //    header.classList.remove('hidden')
+   //    const main = document.getElementById('main');
+   //    main.classList.remove('hidden')
+   //    const footer = document.getElementById('footer');
+   //    footer.classList.remove('hidden')
+   //    const successButton = document.getElementById('success');
+   //    successButton.classList.add('hidden')
+
+   //  })
+
 
    
 //  const seatIndex = document.getElementById('seat40');
