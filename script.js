@@ -8,8 +8,11 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
 
  const seatDisplay = document.getElementById('seat-count');
  const seatIndex = document.getElementById('seat40')
+//  const totalPrice= document.getElementById('totalPrice').innerText;
  let setValue = 0;
- let totalSeat = 40
+ let totalSeat = 40;
+ const ticketPrice = 550;
+
  for (let i of seatArray){
     const seatCount = document.getElementById(i);
     seatCount.addEventListener('click',function(){
@@ -17,6 +20,13 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
         seatDisplay.innerText = setValue
         totalSeat--
         seatIndex.innerText = totalSeat
+
+        const seatNumber = document.getElementById('seat-count').innerText
+        const seatInteger = parseInt(seatNumber) *550;
+        console.log(seatInteger)
+        let totalPrice= document.getElementById('totalPrice');
+        totalPrice.innerText =  seatInteger
+      //   totalPrice = seatInteger * ticketPrice
     })
  }
 //  const seatIndex = document.getElementById('seat40');
