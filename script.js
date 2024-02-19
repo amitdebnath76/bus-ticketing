@@ -47,7 +47,17 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
 
     })
 
-   //  //////////
+// Seat dynamice change name
+    for (let i of seatArray){
+      const seatName = document.getElementById(i);
+      const fristSeat = document.getElementById('fristticket');
+      seatName.addEventListener('click', function(){
+         fristSeat.innerText = i
+      })
+   }
+
+
+   //  ////////// should be use in next
    // const continueButton = document.getElementById('continue');
    //  nestbutton.addEventListener('click',function(){
    //    const header = document.getElementById('header');
@@ -75,10 +85,4 @@ const seatArray =['A1','A2','A3','A4','B1','B2','B3','B4','C1','C2','C3','C4','D
 
 
 
-// let seat = 0;
-// const ticketButton = document.getElementById('byticket');
-// const seatDisplay = document.getElementById('seat-count');
-// ticketButton.addEventListener('click',function(){
-//     seat++;
-//     seatDisplay.innerText = seat
-// })
+
